@@ -1,0 +1,77 @@
+.rectwarning {
+  fill: red;
+}
+
+#map{
+  width: 800px;
+  height: 400px;
+}
+
+#prueba{
+	width: 800px;
+  	height: 400px;
+}
+
+#regresion{
+	width: 800px;
+  	height: 400px;
+}
+
+.legend {
+	line-height: 18px;
+	color: #555;
+}
+.legend i {
+	width: 18px;
+	height: 18px;
+	float: left;
+	margin-right: 8px;
+	opacity: 0.7;
+}
+  
+
+.info {
+	padding: 6px 8px;
+	font: 12px/14px Arial, Helvetica, sans-serif;
+	background: white;
+	background: rgba(255,255,255,0.8);
+	box-shadow: 0 0 15px rgba(0,0,0,0.2);
+	border-radius: 5px;
+}
+.info h4 {
+	margin: 0 0 5px;
+	color: #777;
+}  
+.bar {
+	fill: #80cbc4;
+  }
+
+
+  /* Para la regresión lineal */
+  .line {
+    stroke: #E4002B;
+    fill: none;
+    stroke-width: 3;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: black;
+    shape-rendering: crispEdges;
+}
+
+.axis text {
+    font-size: 10px;
+    font-family: sans-serif;
+}
+
+.text-label {
+    font-size: 10px;
+    font-family: sans-serif;
+}
+
+.dot {
+    stroke: #293b47;
+    fill: #7A99AC
+}
