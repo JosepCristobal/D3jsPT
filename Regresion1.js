@@ -1,4 +1,50 @@
+//Carga de datos inicial
+//Creamos una variabel global, para poder hacer interactivo el cambio de barrio.
+//Por defecto en la carga inicial asignaremos el barrio Centro 
+var filtroBarrio = "Centro"
+//En la carga inicial de la página, recuperamos los datos del fichero de Aibnb directamente
+//Y nos traemos los campos que necesitamos
+d3.dsv(";","./Data/airbnb.csv", function(d) {
+    return {
+      city : d.City,
+      zipcode :  d.Zipcode,
+      price : +d.Price,
+      propertyType : d.Property_Type,
+      Square_Feet : +d.Square_Feet,
+      bedrooms : +d.Bedrooms,
+      barrio : d.Neighbourhood_Group_Cleansed
+    };
+  }).then(function(data) {
+    
+    //Filtramos los datos para traernos sólo lo necesario para procesar los datos de Madrid
+    var large_land = data.filter(function(d) { return ((d.city === "Madrid" || d.city === "Centro, Madrid" || d.city === "Delicias-Madrid"
+    || d.city === "Madri" || d.city === "madrid" || d.city === "MADRID" || d.city === "Madrid, Vallecas (Fontarrón)") 
+    && d.price > 0 && d.zipcode !== "" 
+    && d.Square_Feet > 6 && d.barrio !=="") });    
+  
+    //Actuamos sobre los datos de Airbnb para agruparlos por barrios y hacer los cáculos necesarios
+    //   var expenseMetrics = d3.nest()
+    //   .key(function(d) { return d.barrio; })
+    //   .key(function(d) { return d.bedrooms; })
+    //   .rollup(function(v) { return v.length;
+    //    })
+    //   .entries(large_land);
 
+      const barrio = large_land.filter(function(d) { return d.barrio === filtroBarrio; });  
+      console.log(barrio)
+    // //const barrio = expenseMetrics.filter(function(d) { return d.key === filtroBarrio; });
+    // var rangoBarrio = d3.max(barrio, d => d.values)
+
+    // const valorTotRooms = misBarrios(rangoBarrio)
+
+    // const rangoBarrioSort = rangoBarrio.sort(function(a,b) {
+    //   return a.key - b.key;
+    // });
+ 
+
+
+
+//Fin carga de datos inicial
 
 var margin = {
     top: 20,
@@ -29,8 +75,8 @@ var svg = d3.select("#regresion").append("svg")
 var data = create_data(1000);
 
 data.forEach(function(d) {
-d.x = +d.x;
-d.y = +d.y;
+d.price = +d.price;
+d.Square_Feet = +d.Square_Feet;
 d.yhat = +d.yhat;
 });
 
@@ -89,7 +135,7 @@ svg.append("path")
 .attr("class", "line")
 .attr("d", line);
 
-
+});
 
 function create_data(nsamples) {
 var x = [];
