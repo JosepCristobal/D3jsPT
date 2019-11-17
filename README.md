@@ -8,9 +8,9 @@ A partir de los datos de nuestro fichero de airbnb:
 
 * 	Crear un mapa con los barrios de la ciudad de Madrid y pintarlos por colores según el precio medio del alquiler en el barrio.
   
-*  Crear una gráfica que en el eje Y tenga el número de propiedades y en el eje X el número de habitaciones de un barrio.
-*  Crear una gráfica que dibuje una regresión lineal de alguna de las características con respecto al precio en un barrio.
-*  Hacer que el valor de las gráficas cambien con los datos del barrio al que hago click en el mapa.
+*  Crear una gráfica que en el eje Y tenga el número de propiedades y en el eje X el número de habitaciones de un barrio.
+*  Crear una gráfica que dibuje una regresión lineal de alguna de las características con respecto al precio en un barrio.
+*  Hacer que el valor de las gráficas cambien con los datos del barrio al que hago click en el mapa.
 
 
 ## Desarrollo de la práctica.
@@ -51,7 +51,7 @@ Este mapa es totalmente interactivo
 
 ### Punto dos y cuatro
 
-En el segundo punto, crear una gráfica que en el eje Y tenga el número de propiedades y en el eje X el número de habitaciones de un barrio.
+En el segundo punto, crear una gráfica que en el eje Y tenga el número de propiedades y en el eje X el número de habitaciones de un barrio.
 
 ![](./Img/Captura de pantalla 2019-11-17 a las 20.10.41.png)
 
@@ -70,7 +70,7 @@ Los datos actuales son una base para empezar a trabajar.
 
 ### Imagen final de la práctica.
 
-![](./Img/Captura de pantalla 2019-11-17 a las 20.05.12.png)
+![](https://github.com/JosepCristobal/D3jsPT/blob/master/Img/Captura%20de%20pantalla%202019-11-17%20a%20las%2020.05.12.png)
 
 
 
