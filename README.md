@@ -53,7 +53,7 @@ Este mapa es totalmente interactivo
 
 En el segundo punto, crear una gráfica que en el eje Y tenga el número de propiedades y en el eje X el número de habitaciones de un barrio.
 
-![](./Img/Captura de pantalla 2019-11-17 a las 20.10.41.png)
+![](https://github.com/JosepCristobal/D3jsPT/blob/master/Img/Captura%20de%20pantalla%202019-11-17%20a%20las%2020.10.41.png)
 
 * En esta gráfica hemos incorporado un título que nos detalla lo que estamos visualizando y además nos indica de que barrio se están mostrando los datos, es totalmente dinámico.
 * Los ejes de la gráfica, se ajustan a los datos a mostrar de cada barrio.
