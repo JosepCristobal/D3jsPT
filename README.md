@@ -34,7 +34,7 @@ Para el geoposicionamiento de los barrios, hemos utilizado un fichero decargado 
 
  En el punto número uno, en la creación del mapa con los barrios de Madrid, hemos dividido los barrios agrupandolos por el campo "Neighbourhood_Group_Cleansed" de nuestro fichero airbnb.csv y lo hemos fusionado con el fichero distritos.geojson, para obtener un dataset sólo con los campos necesarios, para poder representar nuestros datos en el mapa. Para la carga, fusión y cálculo de datos se ha utilizado únicamente la libreria de "D3".
 
-![](./Img/Captura de pantalla 2019-11-17 a las 20.09.48.png)
+![](https://github.com/JosepCristobal/D3jsPT/blob/master/Img/Captura%20de%20pantalla%202019-11-17%20a%20las%2020.09.48.png)
 
 En esta imagen podemos observar que los barrios están pintados según los precios medios de alquiler, aplicado una degradación de color para distinguir los precios más elevados de los menos. Los más caros tienen un color oscuro y este se aclara según bajamos de precio medio.
 
